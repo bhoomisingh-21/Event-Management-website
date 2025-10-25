@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const FormSection = () => {
   return (
-    <section
+    <section id="book"
       className="relative bg-cover bg-center bg-no-repeat py-20 px-6 sm:px-12"
       style={{
         backgroundImage:
@@ -20,10 +20,10 @@ const FormSection = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-white leading-snug">
+          <h2 className="text-2xl sm:text-4xl font-bold mb-6 text-white leading-snug">
             Looking for the Most Creative & Innovative Event Planners in Mumbai?
           </h2>
-          <p className="text-lg mb-8 text-gray-200 leading-relaxed">
+          <p className="text-md mb-8 text-gray-200 leading-relaxed">
             Imagine celebrating the most special events of your life without
             worrying about a single thing.
             Khushboo Events is here to make your dream events come true! Our expert event

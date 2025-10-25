@@ -58,7 +58,7 @@ const TestimonialsSection = () => {
         Client Testimonials
       </h3>
 
-      <h2 className="text-3xl sm:text-4xl font-semibold mt-4 text-gray-900">
+      <h2 className="text-2xl sm:text-4xl font-semibold mt-4 text-gray-900 mx-5 sm:mx-0">
         See What Our Clients Have to Say
       </h2>
 

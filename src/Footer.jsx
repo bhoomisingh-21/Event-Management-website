@@ -1,4 +1,3 @@
-// Footer.jsx
 import { motion } from "framer-motion";
 import { Facebook, Instagram, Twitter, Youtube, Linkedin } from "lucide-react";
 
@@ -9,8 +8,21 @@ export default function Footer() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="relative w-full bg-white text-black border-t border-gray-200"
+      className="relative w-full text-white"
     >
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 w-full h-full bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('https://ggresort.com/wp-content/uploads/sites/62/2024/08/springfield3-1536x1008.jpg')",
+        }}
+      ></div>
+
+      {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/80"></div>
+
+      {/* Footer Content */}
       <div className="relative z-10 px-6 py-16 md:px-20">
         {/* Top: Social Icons */}
         <div className="flex justify-center space-x-6 mb-6">
@@ -18,7 +30,7 @@ export default function Footer() {
             <a
               key={i}
               href="#"
-              className="transition duration-300 text-black hover:text-pink-500"
+              className="transition duration-300 text-white hover:text-pink-500"
             >
               <Icon size={24} />
             </a>
@@ -30,7 +42,7 @@ export default function Footer() {
           <h2 className="text-2xl font-semibold tracking-wide uppercase mb-2">
             Khushboo Event Management
           </h2>
-          <p className="max-w-xl mx-auto text-gray-600 text-sm md:text-base">
+          <p className="max-w-xl mx-auto text-white text-sm md:text-base">
             Crafting timeless experiences with creativity, precision, and a touch of elegance.
             From intimate gatherings to grand celebrations — we make every moment unforgettable.
           </p>
@@ -72,7 +84,7 @@ export default function Footer() {
 
           <div>
             <h3 className="text-lg font-semibold mb-4 uppercase">Contact Info</h3>
-            <ul className="space-y-2 text-gray-700">
+            <ul className="space-y-2 text-white">
               <li>123 Celebration Street</li>
               <li>New Delhi, India</li>
               <li>+91 99999 99999</li>
@@ -82,7 +94,7 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-gray-300 mt-12 pt-6 text-center text-sm text-gray-600">
+        <div className="border-t border-white mt-12 pt-6 text-center text-sm text-white">
           © {new Date().getFullYear()} Khushboo Events. All Rights Reserved.
         </div>
       </div>

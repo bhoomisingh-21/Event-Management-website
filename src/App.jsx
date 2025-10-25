@@ -5,6 +5,8 @@ import ServicesSection from "./ServiceSection";
 import TestimonialsSection from "./TestimonialSection";
 import FormSection from "./FormSection";
 import Footer from "./Footer";
+import FunActivities from "./FunActivities";
+import QnASection from "./QnASection";
 
 function App() {
  
@@ -15,8 +17,11 @@ function App() {
       <StatsSection/>
       <ServicesSection />
       <TestimonialsSection />
+      <FunActivities />
       <FormSection />
+      <QnASection />
       <Footer />
+      
     </>
   )
 }
