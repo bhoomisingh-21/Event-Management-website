@@ -1,16 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 const HeroSection = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const [firstLoad, setFirstLoad] = useState(true); // new flag for first load
 
   const navItems = [
     { name: "Home", href: "#home" },
@@ -20,14 +15,63 @@ const HeroSection = () => {
     { name: "Contact", href: "#contact" },
   ];
 
+  const heroImages = [
+    "/images/hero3.jpg",
+    "https://i.pinimg.com/1200x/01/b9/dc/01b9dc57a63641e964a78d8aaf8535ea.jpg",
+    "https://i.pinimg.com/1200x/10/df/ef/10dfef3899e106a63b19cd9a46baed40.jpg",
+  ];
+
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", handleScroll);
+
+    // Cycle images
+    const timer = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % heroImages.length);
+    }, 4000);
+
+    // Remove firstLoad flag after mount so looped slides behave normally
+    const loadTimer = setTimeout(() => setFirstLoad(false), 50);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      clearInterval(timer);
+      clearTimeout(loadTimer);
+    };
+  }, []);
+
   return (
-    <section
-      id="home"
-      className="relative w-full h-screen bg-center bg-cover overflow-hidden"
-      style={{ backgroundImage: "url('/images/hero2.jpg')" }}
-    >
-      {/* Dark gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#14141477] via-[#00000033] to-[#000000a6]" />
+    <section className="relative w-full h-screen overflow-hidden">
+      {/* Hero Slideshow */}
+      <div className="absolute inset-0 overflow-hidden">
+        <AnimatePresence>
+          <motion.div
+            key={currentImage}
+            initial={
+              firstLoad
+                ? { opacity: 1, scale: 1 } // first load: no slide
+                : { x: "100%", opacity: 0, scale: 1 } // other slides
+            }
+            animate={{ x: 0, opacity: 1, scale: 1.1 }}
+            exit={{ x: "-100%", opacity: 0 }}
+            transition={{
+              x: { duration: firstLoad ? 0 : 0.6, ease: "easeInOut" },
+              scale: { duration: 6, ease: "linear" },
+              opacity: { duration: 0.6 },
+            }}
+            className="absolute inset-0 bg-center bg-cover"
+            style={{ backgroundImage: `url(${heroImages[currentImage]})` }}
+          />
+        </AnimatePresence>
+      </div>
+
+      {/* Overlay Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/10 to-black/70"></div>
+
+
+
 
       {/* Header */}
       <header
@@ -47,8 +91,8 @@ const HeroSection = () => {
               <h1 className="text-2xl md:text-3xl font-semibold tracking-widest text-white uppercase">
                 Khushboo
               </h1>
-              <span className="text-[11px] text-white/80 tracking-[2px] uppercase font-light">
-                Event Management
+              <span className="text-[20px] text-white/80 tracking-[2px] uppercase font-light">
+                Eventz
               </span>
             </div>
           </motion.div>
@@ -58,7 +102,8 @@ const HeroSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.6 }}
-            className="hidden md:flex gap-10 text-[16px] font-medium tracking-wide text-white"
+            className="hidden md:flex gap-12 text-[18px] md:text-lg font-semibold tracking-wide text-white uppercase hover:text-[#ffd6b3] transition-colors duration-300"
+
           >
             {navItems.map((item) => (
               <a
@@ -80,7 +125,8 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.6 }}
             href="tel:+919876543210"
-            className="hidden md:flex items-center gap-2 bg-gradient-to-r from-[#FF007F] to-[#FF7FAF] text-white font-semibold px-5 py-2 rounded-full shadow-lg hover:from-[#FF66AA] hover:to-[#FFBBDD] hover:text-white hover:shadow-2xl hover:scale-105 transition-all duration-300"
+            className="hidden md:flex items-center gap-3 bg-gradient-to-r from-[#FF007F] to-[#FF7FAF] text-white font-bold px-6 py-3 rounded-full shadow-lg hover:from-[#FF66AA] hover:to-[#FFBBDD] hover:text-white hover:shadow-2xl hover:scale-105 transition-all duration-300 text-lg"
+
           >
             +91 98765 43210
           </motion.a>
@@ -126,40 +172,69 @@ const HeroSection = () => {
       </header>
 
       {/* Hero Text */}
-      <div className="absolute inset-0 flex flex-col justify-center items-start px-8 md:px-24 max-w-3xl z-20">
-        <motion.h2
-          initial={{ y: 40, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="text-4xl md:text-6xl font-light leading-snug mb-6 text-[#fffaf5] tracking-wide drop-shadow-[0_4px_15px_rgba(0,0,0,0.7)]"
-        >
-          We Make Your <br />
-          <span className="text-[#fffaf5] font-semibold">Events Memorable</span>
-        </motion.h2>
+      <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-6 md:px-12 z-20">
 
-        <motion.p
-          initial={{ y: 30, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.3, duration: 1 }}
-          className="text-[17px] md:text-lg text-[#fff4e8cc] mb-10 leading-relaxed max-w-xl font-medium"
-        >
-          From intimate weddings to grand celebrations — Khushboo brings
-          together artistry, warmth, and timeless elegance to make every moment
-          truly unforgettable.
-        </motion.p>
+  {/* Hero Title */}
+  <motion.h2
+    initial={{ y: 40, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ duration: 1 }}
+    className="relative text-4xl md:text-6xl font-serif font-light leading-tight mb-6 tracking-wide"
+    style={{
+      color: 'white',
+      backdropFilter: 'blur(6px)',
+      WebkitBackdropFilter: 'blur(6px)',
+      padding: '0 6px',
+      borderRadius: '5px',
+      textShadow: '0 4px 20px rgba(0,0,0,0.8)',
+    }}
+  >
+    We Make Your <br />
+  <span
+  className="font-semibold text-white"
+  style={{
+    textShadow: '0 0 12px rgba(255,255,255,0.8), 0 4px 20px rgba(0,0,0,0.6)',
+  }}
+>
+  Events Memorable
+</span>
 
-        {/* Hero Button */}
-        <motion.a
-          initial={{ y: 25, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.6, duration: 0.8 }}
-          href="#book"
-          className="relative bg-gradient-to-r from-[#FF007F] to-[#FF7FAF] text-white font-semibold px-10 py-3 rounded-full shadow-lg hover:from-[#FF66AA] hover:to-[#FFBBDD] hover:text-white hover:shadow-2xl hover:scale-105 transition-all duration-300 overflow-hidden group"
-        >
-          <span className="relative z-10">Book Now</span>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#ffffff22] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-        </motion.a>
-      </div>
+  </motion.h2>
+
+  {/* Hero Subtitle */}
+  <motion.p
+    initial={{ y: 30, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ delay: 0.2, duration: 1 }}
+    className="relative max-w-2xl text-[17px] md:text-xl font-medium leading-relaxed mb-8 text-white"
+    style={{
+      backdropFilter: 'blur(5px)',
+      WebkitBackdropFilter: 'blur(5px)',
+      padding: '0 4px',
+      borderRadius: '4px',
+      textShadow: '0 3px 15px rgba(0,0,0,0.7)',
+    }}
+  >
+    From weddings and ring ceremonies to godh bharai, birthday parties, and corporate events, 
+    Khushboo Eventz creates unforgettable moments filled with artistry, warmth, and elegance.
+  </motion.p>
+
+  {/* Hero Button */}
+ <motion.a
+  initial={{ y: 20, opacity: 0 }}
+  animate={{ y: 0, opacity: 1 }}
+  transition={{ delay: 0.4, duration: 0.8 }}
+  href="#book"
+  className="mt-4 px-16 py-4 text-lg font-semibold rounded-full 
+             bg-gradient-to-r from-[#FF007F] to-[#FF7FAF] text-white 
+             shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
+>
+  Book Now
+</motion.a>
+
+
+</div>
+
     </section>
   );
 };

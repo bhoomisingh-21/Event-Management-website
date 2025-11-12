@@ -1,2 +1,23 @@
 @import "tailwindcss";
 
+@keyframes zoomSlow {
+  0% { transform: scale(1.15); }
+  100% { transform: scale(1.25); }
+}
+
+.animate-zoomSlow {
+  animation: zoomSlow 18s ease-in-out infinite alternate;
+}
+
+/* .page-turn-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.page-turn {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+} */

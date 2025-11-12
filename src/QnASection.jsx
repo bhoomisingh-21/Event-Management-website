@@ -3,44 +3,44 @@ import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   { 
-    question: "How much does event management cost in Mumbai?", 
-    answer: "Our pricing varies depending on the type, scale, and customization of your event. We offer packages tailored to suit every budget." 
+    question: "How much does event management cost in India?", 
+    answer: "Our pricing varies depending on the type, scale, and customization of your event. We offer flexible packages tailored to fit every budget across India." 
   },
   { 
-    question: "What Event Management Services do we provide?", 
-    answer: "We provide end-to-end services including event planning, decor, entertainment, catering, photography, logistics, and coordination for weddings, corporate events, and parties." 
+    question: "What Event Management Services do you provide?", 
+    answer: "We offer complete event solutions including planning, décor, entertainment, catering, photography, logistics, and on-site coordination for weddings, corporate events, and private parties across India." 
   },
   { 
-    question: "Why Should We Hire an Event Planner?", 
-    answer: "Hiring a professional ensures stress-free event execution, creative ideas, timely coordination, and reliable vendor management." 
+    question: "Why should we hire an event planner?", 
+    answer: "Hiring a professional event planner ensures stress-free execution, creative ideas, reliable vendor management, and smooth coordination throughout your event." 
   },
   { 
-    question: "Do You Arrange Events on a Budget?", 
-    answer: "Yes! We work creatively within your budget to deliver memorable events without compromising on quality." 
+    question: "Do you organize events on a budget?", 
+    answer: "Absolutely! We specialize in creating impressive events within your budget without compromising on quality or experience." 
   },
   { 
-    question: "Who is the owner of this Event Management Company?", 
-    answer: "Our company is managed by a team of experienced professionals passionate about creating innovative and unforgettable events." 
+    question: "Who manages this Event Management Company?", 
+    answer: "Our company is run by a passionate team of experienced professionals dedicated to planning innovative and unforgettable events." 
   },
   { 
-    question: "How much does a destination wedding cost in Mumbai?", 
-    answer: "Costs depend on guest count, location, and customization. We offer packages that start from mid-range and can be tailored to your preferences." 
+    question: "How much does a destination wedding cost in India?", 
+    answer: "The cost depends on factors like guest count, venue, and customization level. We offer tailor-made destination wedding packages suitable for various budgets and locations across India." 
   },
   { 
-    question: "What sets your event management apart?", 
-    answer: "Our attention to detail, creativity, personalized approach, and commitment to client satisfaction make us stand out." 
+    question: "What makes your event management services stand out?", 
+    answer: "Our creative approach, attention to detail, and commitment to client satisfaction make us one of the most trusted event planners in India." 
   },
   { 
-    question: "Why is entertainment important in weddings? Do you offer entertainment services?", 
-    answer: "Entertainment enhances the guest experience and creates lasting memories. We provide DJs, live bands, performers, and interactive activities to make your event lively." 
+    question: "Why is entertainment important at events? Do you provide entertainment services?", 
+    answer: "Entertainment adds energy and creates lasting memories. We offer DJs, live bands, celebrity artists, and interactive performers to make your celebration unforgettable." 
   },
   { 
     question: "Can you handle last-minute events?", 
-    answer: "Yes! Our experienced team can organize high-quality events efficiently, even on tight timelines." 
+    answer: "Yes! Our expert team is equipped to organize well-coordinated, high-quality events efficiently, even on short notice." 
   },
   { 
     question: "Do you provide themed or destination events?", 
-    answer: "Absolutely! We specialize in creative themes, destination weddings, and customized experiences to match your vision." 
+    answer: "Of course! We specialize in unique themes, destination weddings, and customized event experiences across India and abroad." 
   },
 ];
 

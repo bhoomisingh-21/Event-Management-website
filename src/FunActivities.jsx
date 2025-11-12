@@ -1,94 +1,100 @@
 import React from "react";
+import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
-import { Music, Sparkles, Heart } from "lucide-react";
+import { Music, Sparkles, Star } from "lucide-react";
 
-const FunActivities = () => {
+const activities = [
+  { name: "Tattoo Artist", img: "https://i.pinimg.com/1200x/7a/30/7c/7a307cf22d94d4672480ebdfc0f1beed.jpg" },
+  { name: "Mehendi Artist", img: "https://i.pinimg.com/1200x/40/d7/bc/40d7bc51807d4f99552270d44055e4cd.jpg" },
+  { name: "Magician", img: "https://i.pinimg.com/736x/06/f0/c0/06f0c0c85542063538d404b4c261bbf0.jpg" },
+  { name: "DJ", img: "https://i.pinimg.com/736x/4d/bd/7a/4dbd7a9997526fc7d2ebbf62b20ff147.jpg" },
+  { name: "Dhol", img: "https://i.pinimg.com/736x/c3/20/ae/c320ae26523a7edcbd99a8484b2b0429.jpg" },
+  { name: "Caricature Artist", img: "https://i.pinimg.com/1200x/35/44/d6/3544d64fa20902356890ee3e0660d89d.jpg" },
+  { name: "Anchor", img: "https://i.pinimg.com/1200x/f9/ad/67/f9ad673508933bc84ccf049692d63c8c.jpg" },
+  { name: "Geet Singer", img: "https://i.pinimg.com/1200x/b5/02/67/b50267f56ce51cf61f3620d78baecaef.jpg" },
+  { name: "Band Baja", img: "https://i.pinimg.com/736x/4c/c0/67/4cc0673b4cc90e38a3df942953459946.jpg" },
+  { name: "Decoration", img: "https://i.pinimg.com/736x/72/65/73/726573169721df0a789c4cc58e2b3321.jpg" },
+  { name: "Photography", img: "https://i.pinimg.com/1200x/2c/db/49/2cdb49668e5bfc6e70142f9414a993c1.jpg" },
+  { name: "Videography", img: "https://i.pinimg.com/736x/96/6a/94/966a9474ff26402b1fe09c38a4432926.jpg" },
+];
+
+export default function FunActivities() {
   return (
-    <section className="bg-white py-20 px-6 md:px-20 flex flex-col items-center relative overflow-hidden">
-      {/* Floating Decorations */}
+    <section className="py-16 sm:py-20 md:py-24 flex flex-col items-center text-center bg-white relative overflow-hidden">
+      {/* Floating fun icons */}
       <motion.div
-        animate={{ y: [0, -10, 0] }}
-        transition={{ repeat: Infinity, duration: 2.5 }}
-        className="absolute left-12 top-12 text-pink-400 opacity-60"
-      >
-        <Music size={36} />
-      </motion.div>
-      <motion.div
-        animate={{ y: [0, 15, 0] }}
+        animate={{ y: [0, -15, 0] }}
         transition={{ repeat: Infinity, duration: 3 }}
-        className="absolute right-16 top-20 text-yellow-400 opacity-60"
+        className="absolute left-4 sm:left-10 top-8 sm:top-10 text-pink-400 opacity-40 sm:opacity-50"
       >
-        <Sparkles size={34} />
-      </motion.div>
-      <motion.div
-        animate={{ rotate: [0, 10, -10, 0] }}
-        transition={{ repeat: Infinity, duration: 4 }}
-        className="absolute bottom-14 right-20 text-pink-300 opacity-60"
-      >
-        <Heart size={34} />
+        <Music size={28} className="sm:w-8 sm:h-8" />
       </motion.div>
 
-      {/* Main Fun Activities Card */}
       <motion.div
-        initial={{ opacity: 0, y: 40 }}
+        animate={{ y: [0, 20, 0] }}
+        transition={{ repeat: Infinity, duration: 4 }}
+        className="absolute right-4 sm:right-12 top-20 sm:top-24 text-yellow-400 opacity-40 sm:opacity-50"
+      >
+        <Sparkles size={26} className="sm:w-7 sm:h-7" />
+      </motion.div>
+
+      <motion.div
+        animate={{ rotate: [0, 20, -20, 0] }}
+        transition={{ repeat: Infinity, duration: 5 }}
+        className="absolute bottom-10 sm:bottom-16 right-8 sm:right-16 text-pink-300 opacity-40 sm:opacity-50"
+      >
+        <Star size={24} className="sm:w-7 sm:h-7" />
+      </motion.div>
+
+      {/* Main pink card */}
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
-        className="bg-pink-100 rounded-3xl shadow-xl p-10 max-w-6xl w-full flex flex-col md:flex-row items-center gap-12"
+        className="bg-gradient-to-br from-pink-200 to-pink-100 border border-pink-300 shadow-2xl rounded-3xl p-6 sm:p-10 md:p-16 max-w-7xl w-[92%] sm:w-11/12 relative overflow-hidden"
       >
-        {/* Left Images */}
-        <div className="grid grid-cols-2 gap-4 w-full md:w-1/2">
-          <motion.img
-            whileHover={{ scale: 1.05 }}
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTNGRvl8CXduDrc0ty0Qo4JgPlXNI-iT1_og&s"
-            alt="Tattoo Artist"
-            className="rounded-2xl object-cover h-32 w-full"
-          />
-          <motion.img
-            whileHover={{ scale: 1.05 }}
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj0lDFSl-jcMlH1uNyn68neahCB6VNUY6Phw&s"
-            alt="Mehendi Artist"
-            className="rounded-2xl object-cover h-32 w-full"
-          />
-          <motion.img
-            whileHover={{ scale: 1.05 }}
-            src="https://ultimatepartyplannergoa.com/images/Magic2.jpg"
-            alt="Magician"
-            className="rounded-2xl object-cover h-32 w-full"
-          />
-          <motion.img
-            whileHover={{ scale: 1.05 }}
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIMoUL-5kHCJm75I0UTt0R0EMiKK686TW6Bg&s"
-            alt="DJ"
-            className="rounded-2xl object-cover h-32 w-full"
-          />
-        </div>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-pink-600 mb-4 sm:mb-6 animate-pulse">
+          Fun & Entertainment
+        </h2>
+        <p className="text-gray-700 mb-8 sm:mb-12 text-base sm:text-lg md:text-xl max-w-xl sm:max-w-2xl mx-auto animate-fadeIn px-2">
+          Experience <span className="text-pink-500 font-bold">music</span>, <span className="text-pink-500 font-bold">laughter</span>, and <span className="text-pink-500 font-bold">memories</span> with our amazing lineup! ✨
+        </p>
 
-        {/* Right Text */}
-        <div className="text-center md:text-left w-full md:w-1/2 relative">
-          <h2 className="text-3xl font-bold text-black-400 mb-4">
-            Bring on the Fun & Entertainment! 
-          </h2>
-          <p className="text-gray-700 text-lg leading-relaxed">
-            From <span className="text-pink-500 font-semibold">tattoo</span> and  
-            <span className="text-pink-500 font-semibold"> mehendi artists </span>  
-            to <span className="text-pink-500 font-semibold"> magician</span> and  
-            <span className="text-pink-500 font-semibold"> DJ</span> we make sure your event bursts with laughter, rhythm, and unforgettable memories.
-          </p>
-          {/* <div className="flex gap-2 mt-6 text-2xl">
-            <motion.span animate={{ y: [0, -6, 0] }} transition={{ repeat: Infinity, duration: 2 }}>💃</motion.span>
-            <motion.span animate={{ y: [0, 6, 0] }} transition={{ repeat: Infinity, duration: 2.3 }}>🎤</motion.span>
-            <motion.span animate={{ y: [0, -8, 0] }} transition={{ repeat: Infinity, duration: 2.5 }}>🌸</motion.span>
-            <motion.span animate={{ y: [0, 8, 0] }} transition={{ repeat: Infinity, duration: 2.8 }}>✨</motion.span>
-          </div> */}
+        {/* Auto-sliding carousel */}
+        <div className="relative overflow-hidden">
+          <motion.div
+            className="flex gap-4 sm:gap-6"
+            animate={{ x: ["0%", "-50%"] }}
+            transition={{ repeat: Infinity, duration: 25, ease: "linear" }}
+          >
+            {[...activities, ...activities].map((item, i) => (
+              <Tilt
+                key={i}
+                tiltMaxAngleX={15}
+                tiltMaxAngleY={15}
+                glareEnable={true}
+                glareMaxOpacity={0.3}
+                className="min-w-[150px] sm:min-w-[200px] md:min-w-[240px] h-48 sm:h-60 md:h-64 rounded-3xl overflow-hidden shadow-lg cursor-pointer relative hover:scale-105 transition-transform duration-300"
+              >
+                <motion.img
+                  src={item.img}
+                  alt={item.name}
+                  className="w-full h-full object-cover rounded-3xl"
+                  animate={{ scale: [1, 1.03, 1] }}
+                  transition={{ duration: 2, repeat: Infinity }}
+                />
+                <div className="absolute bottom-0 w-full bg-pink-600/90 text-white text-sm sm:text-base md:text-lg py-2 font-semibold">
+                  {item.name}
+                </div>
+              </Tilt>
+            ))}
+          </motion.div>
         </div>
       </motion.div>
 
-      {/* Bottom fun line */}
-      <p className="text-gray-600 mt-12 italic text-center">
+      <p className="mt-8 sm:mt-12 text-gray-500 italic text-base sm:text-lg px-4">
         Guaranteed giggles, grooves & good vibes! 😄
       </p>
     </section>
   );
-};
-
-export default FunActivities;
+}
