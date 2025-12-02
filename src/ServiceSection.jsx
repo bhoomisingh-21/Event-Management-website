@@ -6,47 +6,47 @@ const services = [
   {
     title: "Birthday Parties",
     description: "Make your special day unforgettable with our themed birthday celebrations.",
-    image: "https://i.pinimg.com/1200x/06/71/c0/0671c0561ad84758b105250e5f2254ef.jpg",
+    image: "https://scontent.fbom46-1.fna.fbcdn.net/v/t1.6435-9/79533526_463732644286867_4423997820197928960_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=6TWDwnT5QWMQ7kNvwHdifH5&_nc_oc=Adljlec3TXSIRuxZ83iOdHZU6IbZUVZ-2HFtxnPa-U5541wX0zRAobVtmt9TrBnmdnhlAzv1eJmlnEtYP0KArbRG&_nc_zt=23&_nc_ht=scontent.fbom46-1.fna&_nc_gid=4Ze1bvbu_QmO6h0CcEKADA&oh=00_Afkdt9XI3P8BqZftN00r9FOd8ZP4GEVn-i3GHvcupMOoZA&oe=69561CF5",
   },
   {
     title: "Sangeet Sandhyas",
     description: "Celebrate music and dance with our expertly managed sangeet events.",
-    image: "https://i.pinimg.com/1200x/10/bb/8a/10bb8a45a2a6fe3a90252a5830a63aa0.jpg",
+    image: "https://scontent.fbom46-1.fna.fbcdn.net/v/t39.30808-6/469397768_1507816743211780_563828116340910998_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=5GELK6tbcfwQ7kNvwEHqqXB&_nc_oc=AdkurbEZBpzGG0R8GdaLMTcRQJktiruP7ZgBYfKK9ME6vl8ces6bwilb1TApNNYLHZ6S0cd3gF9lTWQFV9eAbjGV&_nc_zt=23&_nc_ht=scontent.fbom46-1.fna&_nc_gid=4uSDnY6HkymxdsD-n9Ae7g&oh=00_AfkcrAGTKddiZXIGzAg5PK8hl8VvqUUNBnKeBYuSnKeMOg&oe=6934708C",
   },
   {
     title: "Society Events",
     description: "Organize community gatherings and events with ease and elegance.",
-    image: "https://i.pinimg.com/1200x/bf/53/b5/bf53b56f4d7859d74dee655083501d23.jpg",
+    image: "https://scontent.fbom46-1.fna.fbcdn.net/v/t1.6435-9/129117240_680010619325734_4960729201389225622_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=AyECaasD934Q7kNvwGLK5DM&_nc_oc=Adku8VAzSKad2SF3ZTD7qC6OdFEyqgNo-mN-qSpiP0vXavt8EarhaoL-OONylHvh9btWOidQW9d-b9N8R_KMkfAZ&_nc_zt=23&_nc_ht=scontent.fbom46-1.fna&_nc_gid=sHQNLnOhnXTKroOBbIsrbA&oh=00_Afn59pZmHBVDy3kWGd4OLcgLwQud528OKJZsif99JgQg7g&oe=69563F77",
   },
   {
     title: "Theme Parties",
     description: "Creative and fun theme parties tailored to your vision.",
-    image: "https://i.pinimg.com/736x/1d/77/cc/1d77cc81ed0ea50b90f590bd18459cba.jpg",
+    image: "https://scontent.fbom46-1.fna.fbcdn.net/v/t1.6435-9/100389947_557200471606750_3141370837282586624_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=SScbpgKLtywQ7kNvwE2OubF&_nc_oc=AdkgpSyLHrvfYKWwe4B950TSELRmBzdAASMHe-7rI5biE_nEdPdqy5MKHE3IjDn7Uh1XoldYTKZKIs5rffp51PkM&_nc_zt=23&_nc_ht=scontent.fbom46-1.fna&_nc_gid=mfAKhRMIEx8tsYG-W4RKjQ&oh=00_Afmi1LaAFfD4U-m_updf1q_acawBHAyWhEuMgPmjeeEfEQ&oe=69561B91",
   },
   {
     title: "Wedding",
     description: "From intimate ceremonies to grand weddings, we handle it all.",
-    image: "https://i.pinimg.com/1200x/7b/40/4c/7b404c8d76c65a9103a995c42b05a430.jpg",
+    image: "https://scontent.fbom46-1.fna.fbcdn.net/v/t39.30808-6/480980350_1556183201708467_8861783915645022502_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Sh-Zd-rU-zMQ7kNvwEgUEPf&_nc_oc=Adkj-X6upZksjl6QuO9R50qqcjsYlPkokJ1k8akV_RSX5rxCH-Nf8SEfiF9q2VSo8P6E6SsT0H7FdHm91Rt-0Ckk&_nc_zt=23&_nc_ht=scontent.fbom46-1.fna&_nc_gid=DaCTBnuwUsbHQNyMoWOT_g&oh=00_AflxP-FYITXXlvjIl-00Oz3ciOXlYuyMyv85lzudZYK9IA&oe=6934A970",
   },
   {
     title: "Corporate Events",
     description: "Professional management for corporate gatherings.",
-    image: "https://i.pinimg.com/1200x/43/49/32/43493264861c0153a4708c902701d862.jpg",
+    image: "https://scontent.fbom46-1.fna.fbcdn.net/v/t39.30808-6/469562043_1510106469649474_2084761775949237716_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=TXfDazdp5wkQ7kNvwHqxlUW&_nc_oc=AdnIp0EizcJK6yo5A6V09bXEO0gibBc5dcT69LBdgxfcRIgepmH5RfClqnz878RKEL3gaCkHXd8ZgNNb0FI-lIay&_nc_zt=23&_nc_ht=scontent.fbom46-1.fna&_nc_gid=RFELDrH4TM5qyFSCPqu_tQ&oh=00_AfkemIKkMIf_F_u-KawwTaSKARQlqzOVZxwoD5AbxiSgYg&oe=69349113",
   },
   {
     title: "Ring Ceremony",
     description: "Celebrate your love with our elegant and personalized ring ceremonies.",
-    image: "https://i.pinimg.com/736x/ea/3b/67/ea3b674da5ce95c835aebf57b40c360a.jpg", // replace with your preferred image
+    image: "https://scontent.fbom46-1.fna.fbcdn.net/v/t1.6435-9/163446762_737913656868763_3641827570653057341_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=haPQcf4NDm4Q7kNvwFz_pHs&_nc_oc=AdkCnsXjwkuLw_bdotPtzi6X1u7Ys8Nx2ACZqZ4aUUEwW4p6c7RYVlsnyNbTG9s1fEdLZO4hrXbTjxqxv5fIC6e-&_nc_zt=23&_nc_ht=scontent.fbom46-1.fna&_nc_gid=0c8W4Fqt6Att7iXUE1GYtA&oh=00_AfldXrIowd3UtcakRsJfkaqhMaMwk9aFqGdiJYAw0IeccA&oe=695640F6", // replace with your preferred image
   },
   {
     title: "God Bharayi",
     description: "Organize this auspicious ceremony with our expert arrangements and care.",
-    image: "https://i.pinimg.com/1200x/ad/96/23/ad962315511a38186d1f7fca1cfdeccc.jpg", // replace with your preferred image
+    image: "https://scontent.fbom46-1.fna.fbcdn.net/v/t1.6435-9/35123443_184959945497473_6308247282017894400_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=kBae7EGyLVEQ7kNvwGNQ2yg&_nc_oc=Adk3Ho9kMo14gFXk9ofzRk0ZKTzE08BoJi4fZJ7vIzlGBB3BZ8Kf0OpvP6vYCll_P_pfyj4Re39HmO5X8foXi8n0&_nc_zt=23&_nc_ht=scontent.fbom46-1.fna&_nc_gid=4yLbGPJ3Qgfp7Z0yB93MHg&oh=00_AfkHJMEmWiOoqcXyqgQwiFA6wvT4L5DfABZdF6yE4BLDjw&oe=69562A1B", 
   },
   {
     title: "Anniversary Celebrations",
     description: "Mark your milestones with memorable anniversary parties tailored to your style.",
-    image: "https://i.pinimg.com/736x/57/27/45/5727450944818d943a1b8c804aaf6b61.jpg", // replace with preferred image
+    image: "https://scontent.fbom46-1.fna.fbcdn.net/v/t39.30808-6/469308900_1508334656493322_3833425772138846564_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZoPAcmXgWMIQ7kNvwHhI5Cv&_nc_oc=Adno0z3TZiUWJBiTDOx_dlrXUc9Jsew92DXo-OmGifNlnx2-WLlxg-UQA6m-58zaH076NGnHZBmO0evtUFhNoq1s&_nc_zt=23&_nc_ht=scontent.fbom46-1.fna&_nc_gid=W1Q8GlXWYABR203mmQPQng&oh=00_AfkZ7eYs_Q9m6kzDghBUepktpLCZY6Evx_oVKBmsXQZ8zw&oe=69347D24", // replace with preferred image
   },
 ];
 

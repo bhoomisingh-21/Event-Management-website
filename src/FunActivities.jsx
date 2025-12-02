@@ -5,67 +5,63 @@ import { Music, Sparkles, Star } from "lucide-react";
 
 const activities = [
   { name: "Tattoo Artist", img: "https://i.pinimg.com/1200x/7a/30/7c/7a307cf22d94d4672480ebdfc0f1beed.jpg" },
-  { name: "Mehendi Artist", img: "https://i.pinimg.com/1200x/40/d7/bc/40d7bc51807d4f99552270d44055e4cd.jpg" },
-  { name: "Magician", img: "https://i.pinimg.com/736x/06/f0/c0/06f0c0c85542063538d404b4c261bbf0.jpg" },
-  { name: "DJ", img: "https://i.pinimg.com/736x/4d/bd/7a/4dbd7a9997526fc7d2ebbf62b20ff147.jpg" },
-  { name: "Dhol", img: "https://i.pinimg.com/736x/c3/20/ae/c320ae26523a7edcbd99a8484b2b0429.jpg" },
+  { name: "Mehendi Artist", img: "https://scontent.fbom46-1.fna.fbcdn.net/v/t39.30808-6/505228646_10030978486985422_8150690362946410382_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=dptkT9v9bwcQ7kNvwEXKcvG&_nc_oc=Adm6PLpj0Q1cf-XhC9gX3J4avFYBnSdFi3FKSnE6ELCzarhvQ_n3uoTIrDBW1w2j8NkEFsHAQUHo-BfL5PxiGEZk&_nc_zt=23&_nc_ht=scontent.fbom46-1.fna&_nc_gid=axZt44orKDVg3BlLKlqL-Q&oh=00_AflwQjFWSvhPEXAqIPntSao9wW5qcdJRjgXI989Tfqw-lw&oe=6934991A" },
+  { name: "Magician", img: "https://scontent.fbom46-1.fna.fbcdn.net/v/t39.30808-6/505313543_10030978516985419_5858161273246251624_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=PfwCXqW6NMkQ7kNvwGod1Fl&_nc_oc=AdmhuCaA6lomAu8tTfjgeOAN7BPH_sIeWzAW-NuADve1hqSJfgeOV7D7Nf3SMUpNGlM9Vuihihkl-Q1Ihvo7j5BT&_nc_zt=23&_nc_ht=scontent.fbom46-1.fna&_nc_gid=BSikRjvbFAGD2a487ebn1g&oh=00_AfnGUeXaN3FTa0Eha6jpJX7WvUcFxQEKD7GWCtg5tIO0EA&oe=69348A3F" },
+  { name: "DJ", img: "https://scontent.fbom46-1.fna.fbcdn.net/v/t1.6435-9/61103099_347956029197863_7944464010286465024_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=H5jvvF3JNvMQ7kNvwFfhffe&_nc_oc=AdnA4KGeTI7QTVUrYMTdPEs5ghnXDScJzQtrt4SGsA4jVuh31Lg4Kh1tZYbZrV1dC3Fykrz5BB_MHrHw6U_q8lzY&_nc_zt=23&_nc_ht=scontent.fbom46-1.fna&_nc_gid=AGGvCKOGxdRlSj-E2SKvrQ&oh=00_AflM793ggskmAVT5EgXik7M1Ibtg_i1BWsze-btupomhvw&oe=69562C2D" },
+  { name: "Dhol", img: "https://scontent.fbom46-1.fna.fbcdn.net/v/t1.6435-9/74282776_426770361316429_8535444732757671936_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=cGlFTaRBJJMQ7kNvwFxY-LO&_nc_oc=Adk86QFgWFBQxpDoZEgh5TuXAB0arfHIR6srI36Npl8bFuB5XX6ns-hsVxs_TBMz65mgOskH-Kn8LADu0IOyT-Hx&_nc_zt=23&_nc_ht=scontent.fbom46-1.fna&_nc_gid=E-bB-yV2i9J9gX5ffgKqXQ&oh=00_AfkdZpRQ26_PrV9MNNMMDhk7qgMtIwi4Tdc-V9P8bPZvSg&oe=69561A19" },
   { name: "Caricature Artist", img: "https://i.pinimg.com/1200x/35/44/d6/3544d64fa20902356890ee3e0660d89d.jpg" },
-  { name: "Anchor", img: "https://i.pinimg.com/1200x/f9/ad/67/f9ad673508933bc84ccf049692d63c8c.jpg" },
-  { name: "Geet Singer", img: "https://i.pinimg.com/1200x/b5/02/67/b50267f56ce51cf61f3620d78baecaef.jpg" },
+  { name: "Anchor", img: "https://scontent.fbom46-1.fna.fbcdn.net/v/t39.30808-6/480607769_1555957118397742_4127555994982279818_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=cA6HkvffvrkQ7kNvwFw1rea&_nc_oc=AdmU7GG7FfweByCquOg7pR1h_7zre7yuLZU28gpq9mf3BtmBvqhtxU-bUnRVpltklMuaOmmUyW9vtWP9F-szNPzv&_nc_zt=23&_nc_ht=scontent.fbom46-1.fna&_nc_gid=fxkwF2CTdBGA3wgYh4zaqQ&oh=00_AflRW4PpqbMvzN-UJzjN3WlD-uZbSunfHYEMbJQ_o4TuJQ&oe=69349C0D" },
+  { name: "Singer", img: "https://scontent.fbom46-1.fna.fbcdn.net/v/t1.6435-9/62091385_355736625086470_6875976331448811520_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=-NgpF8-H1xoQ7kNvwH7dX8o&_nc_oc=AdlCgpZZ5NawLH7AZpUmVqzZT-gYHPwF3864TLXS_0MiBcozf1rABItBW1KS1nPRyrBLIh5g7wZ9H2tdp80o114u&_nc_zt=23&_nc_ht=scontent.fbom46-1.fna&_nc_gid=SRzUY9gUBH4nD6bVf-DP7w&oh=00_AfmdAGQpmllEiD9tdwTiLW58jxbMdD6f_T05Z6Wy1IWzWw&oe=695631D7" },
   { name: "Band Baja", img: "https://i.pinimg.com/736x/4c/c0/67/4cc0673b4cc90e38a3df942953459946.jpg" },
-  { name: "Decoration", img: "https://i.pinimg.com/736x/72/65/73/726573169721df0a789c4cc58e2b3321.jpg" },
-  { name: "Photography", img: "https://i.pinimg.com/1200x/2c/db/49/2cdb49668e5bfc6e70142f9414a993c1.jpg" },
+  { name: "Decoration", img: "https://scontent.fbom46-1.fna.fbcdn.net/v/t1.6435-9/33663531_181284269198374_3190230260687831040_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=dTXvi1Vp7wQQ7kNvwGql5zC&_nc_oc=AdmB_Y_tV0UWulNXaZGD7Eb99oyLslVLDahvph1mMSj6tj9t4xErBtFg6M4C5HCzPCuss0Q2w0syQpa5l0jY3btI&_nc_zt=23&_nc_ht=scontent.fbom46-1.fna&_nc_gid=xxOUrh6kY0305lrb4FiYjA&oh=00_Aflk9IFMau8v2KtWx4LRNPqCkHDKTrhltvOxXupnnd2b_g&oe=69563C6F" },
+  { name: "Photography", img: "https://scontent.fbom46-1.fna.fbcdn.net/v/t1.6435-9/153612207_724835644843231_1427400377148985349_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=FsKG3KStC_EQ7kNvwGxIilK&_nc_oc=AdmJDGwTVdDyikHBS_aHXHhYTzeObEmIGglh9rIraMgpyEuxOcmRKvRJdACLWCKMwQbmv_jvehuvNJfKI3JzBiTB&_nc_zt=23&_nc_ht=scontent.fbom46-1.fna&_nc_gid=y1XUR8CsY5t5Nllfnga36w&oh=00_AfltV-7FyjbZGvSYeKOwJuQ_CYrtcfBwn1N9sRF1ZMr5iQ&oe=695639FF" },
   { name: "Videography", img: "https://i.pinimg.com/736x/96/6a/94/966a9474ff26402b1fe09c38a4432926.jpg" },
 ];
 
 export default function FunActivities() {
   return (
-    <section className="py-16 sm:py-20 md:py-24 flex flex-col items-center text-center bg-white relative overflow-hidden">
-      {/* Floating fun icons */}
-      <motion.div
-        animate={{ y: [0, -15, 0] }}
-        transition={{ repeat: Infinity, duration: 3 }}
-        className="absolute left-4 sm:left-10 top-8 sm:top-10 text-pink-400 opacity-40 sm:opacity-50"
-      >
-        <Music size={28} className="sm:w-8 sm:h-8" />
+    <section
+      className="py-20 md:py-28 relative overflow-hidden"
+      style={{
+        background: "linear-gradient(135deg, #ffe4ee 0%, #fff4f8 40%, #fffbff 80%)",
+      }}
+    >
+      {/* Floating Icons */}
+      <motion.div animate={{ y: [0, -15, 0] }} transition={{ repeat: Infinity, duration: 3 }} className="absolute left-6 top-10 text-pink-400 opacity-40">
+        <Music size={32} />
       </motion.div>
 
-      <motion.div
-        animate={{ y: [0, 20, 0] }}
-        transition={{ repeat: Infinity, duration: 4 }}
-        className="absolute right-4 sm:right-12 top-20 sm:top-24 text-yellow-400 opacity-40 sm:opacity-50"
-      >
-        <Sparkles size={26} className="sm:w-7 sm:h-7" />
+      <motion.div animate={{ y: [0, 20, 0] }} transition={{ repeat: Infinity, duration: 4 }} className="absolute right-10 top-28 text-yellow-400 opacity-40">
+        <Sparkles size={30} />
       </motion.div>
 
-      <motion.div
-        animate={{ rotate: [0, 20, -20, 0] }}
-        transition={{ repeat: Infinity, duration: 5 }}
-        className="absolute bottom-10 sm:bottom-16 right-8 sm:right-16 text-pink-300 opacity-40 sm:opacity-50"
-      >
-        <Star size={24} className="sm:w-7 sm:h-7" />
+      <motion.div animate={{ rotate: [0, 20, -20, 0] }} transition={{ repeat: Infinity, duration: 5 }} className="absolute bottom-14 right-16 text-pink-300 opacity-40">
+        <Star size={28} />
       </motion.div>
 
-      {/* Main pink card */}
+      {/* Main Card */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
-        className="bg-gradient-to-br from-pink-200 to-pink-100 border border-pink-300 shadow-2xl rounded-3xl p-6 sm:p-10 md:p-16 max-w-7xl w-[92%] sm:w-11/12 relative overflow-hidden"
+        className="bg-gradient-to-br from-pink-200/70 to-pink-100/60 backdrop-blur-xl border border-pink-300/50 shadow-2xl rounded-3xl p-10 md:p-14 max-w-7xl w-[90%] mx-auto"
       >
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-pink-600 mb-4 sm:mb-6 animate-pulse">
-          Fun & Entertainment
+        <h2 className="text-3xl text-center sm:text-4xl md:text-4xl font-bold text-pink-700 mb-4">
+          Unforgettable Fun, Crafted For Your Celebration 
         </h2>
-        <p className="text-gray-700 mb-8 sm:mb-12 text-base sm:text-lg md:text-xl max-w-xl sm:max-w-2xl mx-auto animate-fadeIn px-2">
-          Experience <span className="text-pink-500 font-bold">music</span>, <span className="text-pink-500 font-bold">laughter</span>, and <span className="text-pink-500 font-bold">memories</span> with our amazing lineup! ✨
+
+        <p className="text-gray-700 text-center mb-12 text-lg md:text-xl max-w-2xl mx-auto">
+          We offer a complete range of activities, end-to-end event management tailored for your needs.
         </p>
 
-        {/* Auto-sliding carousel */}
-        <div className="relative overflow-hidden">
+        {/* Scroll + Auto-scroll Row */}
+        <div className="relative overflow-x-auto no-scrollbar py-4">
           <motion.div
-            className="flex gap-4 sm:gap-6"
+            className="flex gap-6"
             animate={{ x: ["0%", "-50%"] }}
             transition={{ repeat: Infinity, duration: 25, ease: "linear" }}
+            drag="x"
+            dragConstraints={{ left: -500, right: 500 }}
           >
             {[...activities, ...activities].map((item, i) => (
               <Tilt
@@ -73,17 +69,17 @@ export default function FunActivities() {
                 tiltMaxAngleX={15}
                 tiltMaxAngleY={15}
                 glareEnable={true}
-                glareMaxOpacity={0.3}
-                className="min-w-[150px] sm:min-w-[200px] md:min-w-[240px] h-48 sm:h-60 md:h-64 rounded-3xl overflow-hidden shadow-lg cursor-pointer relative hover:scale-105 transition-transform duration-300"
+                glareMaxOpacity={0.25}
+                className="min-w-[170px] md:min-w-[240px] h-60 md:h-72 rounded-3xl overflow-hidden shadow-lg cursor-pointer relative hover:scale-105 transition-transform duration-300"
               >
                 <motion.img
                   src={item.img}
                   alt={item.name}
                   className="w-full h-full object-cover rounded-3xl"
                   animate={{ scale: [1, 1.03, 1] }}
-                  transition={{ duration: 2, repeat: Infinity }}
+                  transition={{ duration: 2.5, repeat: Infinity }}
                 />
-                <div className="absolute bottom-0 w-full bg-pink-600/90 text-white text-sm sm:text-base md:text-lg py-2 font-semibold">
+                <div className="absolute bottom-0 w-full bg-pink-600/90 text-white text-center text-sm md:text-lg py-2 font-semibold">
                   {item.name}
                 </div>
               </Tilt>
@@ -92,8 +88,8 @@ export default function FunActivities() {
         </div>
       </motion.div>
 
-      <p className="mt-8 sm:mt-12 text-gray-500 italic text-base sm:text-lg px-4">
-        Guaranteed giggles, grooves & good vibes! 😄
+      <p className="mt-12 text-gray-600 italic text-lg text-center">
+        Guaranteed giggles, grooves & good vibes 😄
       </p>
     </section>
   );

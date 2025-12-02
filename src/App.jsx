@@ -7,7 +7,8 @@ import FormSection from "./FormSection";
 import Footer from "./Footer";
 import FunActivities from "./FunActivities";
 import QnASection from "./QnASection";
-
+import AboutFounder from "./AboutFounder";
+import Pricing from "./Pricing";
 function App() {
  
 
@@ -15,9 +16,11 @@ function App() {
     <>
       <Hero />
       <StatsSection/>
+       <FunActivities />
       <ServicesSection />
+      <AboutFounder/>
       <TestimonialsSection />
-      <FunActivities />
+      <Pricing />
       <FormSection />
       <QnASection />
       <Footer />

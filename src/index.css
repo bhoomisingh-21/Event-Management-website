@@ -9,15 +9,10 @@
   animation: zoomSlow 18s ease-in-out infinite alternate;
 }
 
-/* .page-turn-container {
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
-
-.page-turn {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
-} */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}

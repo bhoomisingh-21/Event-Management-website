@@ -57,7 +57,7 @@ const FormSection = () => {
               hassle-free celebrations that captivate your attendees.
             </p>
             <span className="text-sm uppercase tracking-widest text-pink-300 font-semibold">
-              Featured Event Planners Across India
+              Khushboo Event Management 
             </span>
           </div>
         </motion.div>

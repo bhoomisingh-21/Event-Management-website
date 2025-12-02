@@ -11,14 +11,14 @@ const HeroSection = () => {
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
     { name: "Services", href: "#services" },
-    { name: "Gallery", href: "#gallery" },
+    { name: "Pricing", href: "#pricing" },
     { name: "Contact", href: "#contact" },
   ];
 
   const heroImages = [
-    "/images/hero3.jpg",
-    "https://i.pinimg.com/1200x/01/b9/dc/01b9dc57a63641e964a78d8aaf8535ea.jpg",
-    "https://i.pinimg.com/1200x/10/df/ef/10dfef3899e106a63b19cd9a46baed40.jpg",
+    "https://scontent.fbom46-1.fna.fbcdn.net/v/t1.6435-9/33663531_181284269198374_3190230260687831040_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=dTXvi1Vp7wQQ7kNvwGql5zC&_nc_oc=AdmB_Y_tV0UWulNXaZGD7Eb99oyLslVLDahvph1mMSj6tj9t4xErBtFg6M4C5HCzPCuss0Q2w0syQpa5l0jY3btI&_nc_zt=23&_nc_ht=scontent.fbom46-1.fna&_nc_gid=xxOUrh6kY0305lrb4FiYjA&oh=00_Aflk9IFMau8v2KtWx4LRNPqCkHDKTrhltvOxXupnnd2b_g&oe=69563C6F",
+    "https://scontent.fbom46-1.fna.fbcdn.net/v/t39.30808-6/480430979_1556201971706590_2376024977403872112_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=N6RlE7gRLo4Q7kNvwHANH6D&_nc_oc=Adkyx9RljBm0CaCPTpL7vcZC6ZP4hK4ZvrU-rq6raxTBlqtnZU_DJirMeK39e0T8BBfKE1EftxRX9reWxxR3rWsl&_nc_zt=23&_nc_ht=scontent.fbom46-1.fna&_nc_gid=PvM2W1Q18_IErrymK2c-xg&oh=00_AfnVr5APz9ZXXYTl6z_vzxw3WwFi77pmDlMpUo_PFrL4Tw&oe=6934902E",
+    "https://scontent.fbom46-1.fna.fbcdn.net/v/t39.30808-6/480028095_1046846087468146_5068257502084916652_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=OK8SkuTQ6ewQ7kNvwGz2vEK&_nc_oc=Adm-Z1CIeIDtScWCRoJzN7u71C-Kgh0n0weqS8SCK5I34oCvw06HHhM9VR5cy6Wdl88ff0NKjxZzYogKR6IMlbta&_nc_zt=23&_nc_ht=scontent.fbom46-1.fna&_nc_gid=4okI5CQmT7MB5glhUvHNWg&oh=00_AflycZ6iJJBKZuXSNgEwMV6LsOq2kZUxz-9MoO7yl8TXXQ&oe=6934A36C",
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
@@ -61,7 +61,9 @@ const HeroSection = () => {
               scale: { duration: 6, ease: "linear" },
               opacity: { duration: 0.6 },
             }}
-            className="absolute inset-0 bg-center bg-cover"
+            className="absolute inset-0 bg-[center_top] bg-cover"
+
+
             style={{ backgroundImage: `url(${heroImages[currentImage]})` }}
           />
         </AnimatePresence>
@@ -128,7 +130,7 @@ const HeroSection = () => {
             className="hidden md:flex items-center gap-3 bg-gradient-to-r from-[#FF007F] to-[#FF7FAF] text-white font-bold px-6 py-3 rounded-full shadow-lg hover:from-[#FF66AA] hover:to-[#FFBBDD] hover:text-white hover:shadow-2xl hover:scale-105 transition-all duration-300 text-lg"
 
           >
-            +91 98765 43210
+            +91 9022225334
           </motion.a>
 
           {/* Mobile Hamburger */}
@@ -215,8 +217,7 @@ const HeroSection = () => {
       textShadow: '0 3px 15px rgba(0,0,0,0.7)',
     }}
   >
-    From weddings and ring ceremonies to godh bharai, birthday parties, and corporate events, 
-    Khushboo Eventz creates unforgettable moments filled with artistry, warmth, and elegance.
+    Weddings, ring ceremonies, godh bharai, birthdays, or corporate events. Khushboo Eventz turns moments into timeless memories with unmatched artistry, warmth, and elegance.
   </motion.p>
 
   {/* Hero Button */}
