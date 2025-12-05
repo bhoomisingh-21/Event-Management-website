@@ -44,7 +44,7 @@ export default function Footer() {
             Khushboo Eventz
           </h2>
           <p className="max-w-2xl mx-auto mt-4 text-white/85 text-sm md:text-base leading-relaxed">
-            Turning your dreams into unforgettable celebrations — blending
+            Turning your dreams into unforgettable celebrations blending
             elegance, creativity, and precision to make every event a cherished
             memory.
           </p>
@@ -101,10 +101,10 @@ export default function Footer() {
               Contact Info
             </h3>
             <ul className="space-y-2 text-white/85 text-sm md:text-base">
-              <li>123 Celebration Street</li>
-              <li>New Delhi, India</li>
-              <li>+91 99999 99999</li>
-              <li>info@khushbooevents.com</li>
+              <li>Mumbai, Malad</li>
+              <li>Servicable across India</li>
+              <li>+91 9022225334</li>
+              <li>hi@khushbooeventz.com</li>
             </ul>
           </div>
         </div>
