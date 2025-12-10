@@ -25,18 +25,26 @@ export default function Footer() {
       {/* Content */}
       <div className="relative z-10 px-6 py-20 md:px-20 lg:px-32">
         {/* Social Icons */}
-        <div className="flex justify-center space-x-6 mb-10">
-          {[Facebook, Instagram, Twitter, Youtube, Linkedin].map((Icon, i) => (
-            <motion.a
-              key={i}
-              href="#"
-              whileHover={{ scale: 1.15 }}
-              className="text-white/85 hover:text-pink-500 transition duration-300"
-            >
-              <Icon size={26} />
-            </motion.a>
-          ))}
-        </div>
+<div className="flex justify-center space-x-6 mb-10">
+  {[
+    { icon: Facebook, url: "https://www.facebook.com/p/Anchor-Harshal-The-Original-100064282921267/" },
+    { icon: Instagram, url: "https://www.instagram.com/anchorharshal/" },
+    { icon: Youtube, url: "https://www.youtube.com/@makladledakhazana4537" },
+    { icon: Linkedin, url: "https://www.linkedin.com/in/harshal-gadhia/" },
+  ].map((item, i) => (
+    <motion.a
+      key={i}
+      href={item.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      whileHover={{ scale: 1.15 }}
+      className="text-white/85 hover:text-pink-500 transition duration-300"
+    >
+      <item.icon size={26} />
+    </motion.a>
+  ))}
+</div>
+
 
         {/* Branding */}
         <div className="text-center mb-16">

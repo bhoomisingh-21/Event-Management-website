@@ -1,65 +1,138 @@
 import React from "react";
-import Tilt from "react-parallax-tilt";
-import { Check, Star } from "lucide-react";
+import { Check } from "lucide-react";
 
-export default function PricingCard() {
+export default function Pricing() {
   return (
-    <section id="pricing"  className="py-24 bg-gradient-to-b from-pink-50 via-pink-100 to-white relative overflow-hidden">
-      <div className="max-w-6xl mx-auto px-6 text-center mb-12">
-        <h2 className="text-4xl md:text-5xl font-bold text-pink-700 mb-4">
-          Our Event Packages
+    <section id="pricing" className="py-24 bg-gradient-to-b from-orange-50 via-pink-50 to-white">
+      
+      {/* Header */}
+      <div className="text-center mb-16">
+        <span className="text-sm font-semibold px-4 py-1 rounded-full bg-pink-100 text-pink-700">
+          🔥 Limited Time Offer
+        </span>
+
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-4">
+          Perfect Starter Package
         </h2>
-        <p className="text-gray-600 text-lg md:text-xl">
-          Tailored experiences to make your celebration unforgettable
+
+        <p className="text-gray-600 text-lg max-w-xl mx-auto mt-2">
+          Everything you need for small to medium-scale celebrations
         </p>
       </div>
 
-      {/* Pricing Card with Tilt */}
-      <Tilt
-        glareEnable={true}
-        glareMaxOpacity={0.2}
-        tiltMaxAngleX={10}
-        tiltMaxAngleY={10}
-        className="max-w-4xl mx-auto bg-gradient-to-br from-pink-200/40 to-pink-100/50 backdrop-blur-xl border border-pink-300/40 shadow-2xl rounded-3xl overflow-hidden flex flex-col md:flex-row hover:scale-105 transition-transform duration-500 relative"
-      >
-        {/* Ribbon on Top-Right */}
-<div className="absolute top-4 right-[-30px] transform rotate-25 bg-pink-600 text-white font-bold px-10 py-2 shadow-lg z-10">
-  Limited Time Package
-</div>
+      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+        
+        {/* LEFT CARD – WHAT'S INCLUDED */}
+        <div className="bg-white rounded-3xl shadow-xl border border-gray-100 p-10">
+          <h3 className="text-2xl font-bold text-gray-900 mb-6">
+            What's Included
+          </h3>
 
+          <p className="text-gray-600 mb-8 leading-relaxed">
+            A perfect starter package for small to medium-scale celebrations.
+            It includes essential elements—anchoring, music, décor, photography,
+            and entertainment—to ensure your event feels lively, organized, and
+            memorable. Designed to provide a complete professional experience
+            without hassle.
+          </p>
 
-        {/* Left Side: Package info */}
-        <div className="md:w-1/2 p-10 md:p-12 bg-pink-50 flex flex-col justify-between items-center">
-          <div className="text-center">
-            <div className="flex items-center justify-center mb-4">
-              <Star size={28} className="text-pink-400 mr-2 animate-bounce" />
-              <h3 className="text-3xl font-bold text-pink-700">Basic Package</h3>
-            </div>
-            <p className="text-gray-600 mb-6 text-lg">
-              Perfect starter package for small to medium celebrations. Includes all the essentials to make your event lively and memorable.
-            </p>
-            <div className="text-5xl font-extrabold text-pink-700 mb-2">
+          <div className="space-y-4">
+            {[
+              "Professional Event Anchoring",
+              "Premium Music & Sound System",
+              "Beautiful Event Décor",
+              "Professional Photography",
+              "Live Entertainment Acts",
+              "Event Coordination & Management",
+              "Guest Management Support",
+              "Technical Support Throughout",
+            ].map((item, i) => (
+              <div className="flex items-start" key={i}>
+                <Check className="text-pink-600 mt-1 mr-3" size={20} />
+                <span className="text-gray-700 text-lg">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* RIGHT CARD – PRICE CARD */}
+        <div className="bg-white rounded-3xl shadow-xl border border-gray-100 p-10">
+          
+          <div className="text-center mb-8">
+            <span className="bg-orange-100 text-orange-700 text-xs font-bold px-4 py-1 rounded-full">
+              LIMITED TIME OFFER
+            </span>
+
+            <h3 className="text-2xl font-bold text-gray-900 mt-4">
+              Starter Package
+            </h3>
+
+            <div className="text-5xl font-extrabold text-pink-600 mt-4">
               ₹20,000
             </div>
-            <p className="text-gray-500 mb-6">All-inclusive, limited-time offer</p>
+            <p className="text-gray-500">One-time payment</p>
           </div>
-          <button className="bg-pink-600 hover:bg-pink-700 text-white font-semibold py-3 px-8 rounded-xl text-lg transition-colors duration-300 shadow-md hover:shadow-lg">
-            Book Now
-          </button>
+
+          {/* Details List */}
+          <div className="space-y-5 text-lg">
+            <div className="flex justify-between">
+              <span className="text-gray-600">Event Duration</span>
+              <span className="font-semibold text-gray-900">Full Day</span>
+            </div>
+
+            <div className="flex justify-between">
+              <span className="text-gray-600">Guest Capacity</span>
+              <span className="font-semibold text-gray-900">Up to 150</span>
+            </div>
+
+            <div className="flex justify-between">
+              <span className="text-gray-600">Setup Time</span>
+              <span className="font-semibold text-gray-900">Included</span>
+            </div>
+
+            <div className="flex justify-between">
+              <span className="text-gray-600">Support</span>
+              <span className="font-semibold text-gray-900">24/7</span>
+            </div>
+          </div>
+
+     {/* CTA */}
+<div className="mt-10">
+  <button
+    onClick={() => {
+      document.getElementById("book")?.scrollIntoView({
+        behavior: "smooth",
+      });
+    }}
+    className="w-full py-4 text-lg font-semibold text-white rounded-xl bg-gradient-to-r from-pink-600 to-orange-500 hover:opacity-90 shadow-lg"
+  >
+    Book Your Event Now
+  </button>
+
+
+
+            <p className="text-center text-sm mt-3 text-gray-500">
+              Limited slots available · Book within 48 hours
+            </p>
+          </div>
+
+        
         </div>
 
-        {/* Right Side: Included Services */}
-        <div className="md:w-1/2 p-10 md:p-12 bg-white border-l border-pink-300/30">
-          <h4 className="text-2xl font-semibold text-pink-700 mb-6">What's Included:</h4>
-          <ul className="text-gray-700 space-y-3 text-lg">
-            <li className="flex items-center"><Check className="text-pink-500 mr-3" /> Anchor</li>
-            <li className="flex items-center"><Check className="text-pink-500 mr-3" /> DJ</li>
-            <li className="flex items-center"><Check className="text-pink-500 mr-3" /> Decoration</li>
-            <li className="flex items-center"><Check className="text-pink-500 mr-3" /> Photographer</li>
-            <li className="flex items-center"><Check className="text-pink-500 mr-3" /> Fun & Entertainment (Sangeet Artists, Tattoo Artist, Band Baja Baraat)</li>
-          </ul>
+      </div>
+
+      {/* BOTTOM ICONS ROW */}
+      <div className="max-w-5xl mx-auto mt-16 grid grid-cols-3 text-center gap-6">
+        <div className="p-6 bg-white rounded-2xl shadow">
+          <p className="font-semibold text-gray-900">Premium Quality</p>
         </div>
-      </Tilt>
+        <div className="p-6 bg-white rounded-2xl shadow">
+          <p className="font-semibold text-gray-900">On-Time Delivery</p>
+        </div>
+        <div className="p-6 bg-white rounded-2xl shadow">
+          <p className="font-semibold text-gray-900">Hassle-Free</p>
+        </div>
+      </div>
     </section>
   );
 }
