@@ -16,9 +16,9 @@ const HeroSection = () => {
   ];
 
   const heroImages = [
-    "https://scontent.fbom46-1.fna.fbcdn.net/v/t1.6435-9/33663531_181284269198374_3190230260687831040_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=dTXvi1Vp7wQQ7kNvwGql5zC&_nc_oc=AdmB_Y_tV0UWulNXaZGD7Eb99oyLslVLDahvph1mMSj6tj9t4xErBtFg6M4C5HCzPCuss0Q2w0syQpa5l0jY3btI&_nc_zt=23&_nc_ht=scontent.fbom46-1.fna&_nc_gid=xxOUrh6kY0305lrb4FiYjA&oh=00_Aflk9IFMau8v2KtWx4LRNPqCkHDKTrhltvOxXupnnd2b_g&oe=69563C6F",
-    "https://scontent.fbom46-1.fna.fbcdn.net/v/t39.30808-6/480430979_1556201971706590_2376024977403872112_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=N6RlE7gRLo4Q7kNvwHANH6D&_nc_oc=Adkyx9RljBm0CaCPTpL7vcZC6ZP4hK4ZvrU-rq6raxTBlqtnZU_DJirMeK39e0T8BBfKE1EftxRX9reWxxR3rWsl&_nc_zt=23&_nc_ht=scontent.fbom46-1.fna&_nc_gid=PvM2W1Q18_IErrymK2c-xg&oh=00_AfnVr5APz9ZXXYTl6z_vzxw3WwFi77pmDlMpUo_PFrL4Tw&oe=6934902E",
-    "https://scontent.fbom46-1.fna.fbcdn.net/v/t39.30808-6/480028095_1046846087468146_5068257502084916652_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=OK8SkuTQ6ewQ7kNvwGz2vEK&_nc_oc=Adm-Z1CIeIDtScWCRoJzN7u71C-Kgh0n0weqS8SCK5I34oCvw06HHhM9VR5cy6Wdl88ff0NKjxZzYogKR6IMlbta&_nc_zt=23&_nc_ht=scontent.fbom46-1.fna&_nc_gid=4okI5CQmT7MB5glhUvHNWg&oh=00_AflycZ6iJJBKZuXSNgEwMV6LsOq2kZUxz-9MoO7yl8TXXQ&oe=6934A36C",
+    "./images/scroller1.jpg",
+    "./images/scroller3.jpg",
+    "./images/scroller2.jpg",
   ];
 
   const [currentImage, setCurrentImage] = useState(0);

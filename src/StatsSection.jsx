@@ -93,7 +93,7 @@ className="w-2/3 sm:w-1/3 h-full bg-gradient-to-r from-transparent via-[#ffe8b9a
   {/* Showcase Image */}
   <div className="flex justify-center py-1 px-6 md:px-10 pb-16">
     <img
-      src="https://scontent.fbom46-1.fna.fbcdn.net/v/t39.30808-6/469356191_1507816666545121_2883998144245190373_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=xpf5f1X5VMEQ7kNvwFpcK8V&_nc_oc=AdlcYDjR60Qp2ZEgcbgEy5ERtQSexrPtR_xgETMJs80zqp80xz7fGeUi2Ek21xFG78RQwPos8MeRGNgr8UumkLUe&_nc_zt=23&_nc_ht=scontent.fbom46-1.fna&_nc_gid=g1G7XpbK6bIEzT4gphNpkw&oh=00_Afl5u-bG1GimmUtb5Pl_I3cUGdePYKFCE7SDtspXTmKRLg&oe=693471E8"
+      src="./images/showcase.jpg"
       alt="Showcase"
       className="w-full md:w-4/5 lg:w-3/4 rounded-3xl shadow-2xl object-cover"
     />

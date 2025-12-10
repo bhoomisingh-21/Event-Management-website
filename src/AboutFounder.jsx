@@ -33,7 +33,7 @@ export default function AboutFounder() {
 
             {/* Extra small layered images */}
             <motion.img
-              src="https://scontent.fbom22-1.fna.fbcdn.net/v/t39.30808-6/469579637_1510106396316148_3190268471891106138_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=njnvbluHrFYQ7kNvwFZogPL&_nc_oc=AdmsTeIPNArBwlpKB30jYp7wERSSRierzVBhTBTph2EzhVuPw6O2lUUCwUX9rYpl3LV-XXMmtDuNmxLt43d6mRZv&_nc_zt=23&_nc_ht=scontent.fbom22-1.fna&_nc_gid=0QgTFGv09shTkm5ewM5-NA&oh=00_AfhP7RaghdveURZDLmhw3vMre59SIkbO60Au7dofMbA3Fw&oe=6930A0AD"
+              src= "./images/founder.jpg"
               className="absolute -bottom-4 md:-bottom-6 -left-6 md:-left-12 w-24 h-24 md:w-36 md:h-36 rounded-2xl shadow-xl border-4 border-white"
               animate={{ rotate: [0, 3, -3, 0] }}
               transition={{ repeat: Infinity, duration: 8 }}

@@ -11,7 +11,7 @@ const services = [
   {
     title: "Sangeet Sandhyas",
     description: "Celebrate music and dance with our expertly managed sangeet events.",
-    image: "https://scontent.fbom46-1.fna.fbcdn.net/v/t39.30808-6/469397768_1507816743211780_563828116340910998_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=5GELK6tbcfwQ7kNvwEHqqXB&_nc_oc=AdkurbEZBpzGG0R8GdaLMTcRQJktiruP7ZgBYfKK9ME6vl8ces6bwilb1TApNNYLHZ6S0cd3gF9lTWQFV9eAbjGV&_nc_zt=23&_nc_ht=scontent.fbom46-1.fna&_nc_gid=4uSDnY6HkymxdsD-n9Ae7g&oh=00_AfkcrAGTKddiZXIGzAg5PK8hl8VvqUUNBnKeBYuSnKeMOg&oe=6934708C",
+    image: "./images/sangeet.jpg"
   },
   {
     title: "Society Events",
@@ -26,12 +26,12 @@ const services = [
   {
     title: "Wedding",
     description: "From intimate ceremonies to grand weddings, we handle it all.",
-    image: "https://scontent.fbom46-1.fna.fbcdn.net/v/t39.30808-6/480980350_1556183201708467_8861783915645022502_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Sh-Zd-rU-zMQ7kNvwEgUEPf&_nc_oc=Adkj-X6upZksjl6QuO9R50qqcjsYlPkokJ1k8akV_RSX5rxCH-Nf8SEfiF9q2VSo8P6E6SsT0H7FdHm91Rt-0Ckk&_nc_zt=23&_nc_ht=scontent.fbom46-1.fna&_nc_gid=DaCTBnuwUsbHQNyMoWOT_g&oh=00_AflxP-FYITXXlvjIl-00Oz3ciOXlYuyMyv85lzudZYK9IA&oe=6934A970",
+    image: "./images/wedding.jpg"
   },
   {
     title: "Corporate Events",
     description: "Professional management for corporate gatherings.",
-    image: "https://scontent.fbom46-1.fna.fbcdn.net/v/t39.30808-6/469562043_1510106469649474_2084761775949237716_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=TXfDazdp5wkQ7kNvwHqxlUW&_nc_oc=AdnIp0EizcJK6yo5A6V09bXEO0gibBc5dcT69LBdgxfcRIgepmH5RfClqnz878RKEL3gaCkHXd8ZgNNb0FI-lIay&_nc_zt=23&_nc_ht=scontent.fbom46-1.fna&_nc_gid=RFELDrH4TM5qyFSCPqu_tQ&oh=00_AfkemIKkMIf_F_u-KawwTaSKARQlqzOVZxwoD5AbxiSgYg&oe=69349113",
+    image: "./images/corporate.jpg"
   },
   {
     title: "Ring Ceremony",
@@ -46,7 +46,7 @@ const services = [
   {
     title: "Anniversary Celebrations",
     description: "Mark your milestones with memorable anniversary parties tailored to your style.",
-    image: "https://scontent.fbom46-1.fna.fbcdn.net/v/t39.30808-6/469308900_1508334656493322_3833425772138846564_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZoPAcmXgWMIQ7kNvwHhI5Cv&_nc_oc=Adno0z3TZiUWJBiTDOx_dlrXUc9Jsew92DXo-OmGifNlnx2-WLlxg-UQA6m-58zaH076NGnHZBmO0evtUFhNoq1s&_nc_zt=23&_nc_ht=scontent.fbom46-1.fna&_nc_gid=W1Q8GlXWYABR203mmQPQng&oh=00_AfkZ7eYs_Q9m6kzDghBUepktpLCZY6Evx_oVKBmsXQZ8zw&oe=69347D24", // replace with preferred image
+    image: "./images/anniversary.jpg" // replace with preferred image
   },
 ];
 
