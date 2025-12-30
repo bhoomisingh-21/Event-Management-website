@@ -17,8 +17,8 @@ const HeroSection = () => {
 
   const heroImages = [
     "./images/scroller1.jpg",
-    "./images/scroller3.jpg",
-    "./images/scroller2.jpg",
+    "https://scontent.fbom22-1.fna.fbcdn.net/v/t39.30808-6/469327694_1507816389878482_1850951968033200660_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=BsUfQWpB1KoQ7kNvwGl6yPJ&_nc_oc=AdmNXUWOiIe8pn0X7S5LsAFOStzR2BlwuzPitbV9VhcAnEJYY5SBCyQbZSgqgxWIdDRrXHOZ3rdA1io5CDOa79bu&_nc_zt=23&_nc_ht=scontent.fbom22-1.fna&_nc_gid=K0UTN4o6HRBxObi-GVso9A&oh=00_AfkleowqkkLGC-N3wq5fnq4-v4im1-Xa50ivmVLnN_7YOQ&oe=6959C3B4",
+    "https://scontent.fbom22-1.fna.fbcdn.net/v/t39.30808-6/480281068_1554593038534150_7889664085783160130_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=R5NubGxbgmYQ7kNvwH5GJ3r&_nc_oc=AdnwZeM5sWyayM2AA1Fd2fJQyalhEar1hV9ObCEKwbV3ge4PvRL-s_jG4SL5pqNj1JOuSQS7WbGJb2FtGezMxkrC&_nc_zt=23&_nc_ht=scontent.fbom22-1.fna&_nc_gid=zBAmL8NcJHKXxxvOTr7dbw&oh=00_AflB4Ou9xmvmngHSZnGqPCmOC5Kg4Qa89WxEL0z9e7F0iw&oe=6959B0EB",
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
