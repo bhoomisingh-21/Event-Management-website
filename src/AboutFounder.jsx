@@ -25,7 +25,7 @@ export default function AboutFounder() {
           <div className="relative w-full md:w-1/2 flex justify-center mb-8 md:mb-0">
             {/* Main big image */}
             <motion.img
-              src="https://scontent.fbom22-1.fna.fbcdn.net/v/t1.6435-9/134919516_697818777544918_5357159715062573810_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=2fusBRcUIvIQ7kNvwHLgjlR&_nc_oc=AdkzJUNBZmaKlIALXOveDqBcOsomBhMhN66TDOUxOpM3REfPG1ICS9xsdLsPmOmkZuHhoUHZvvpnrd8Bj9b9SdM5&_nc_zt=23&_nc_ht=scontent.fbom22-1.fna&_nc_gid=gT9W6tuIDgQvjSdj38jXLQ&oh=00_Afh08JN57LfufVeXHj8dK85dggR8MnAmTODe3_IRMKF-ew&oe=69524590"
+              src="./images/anchor harshal 1.jpg"
               alt="Anchor Harshal"
               className="w-40 h-40 md:w-64 md:h-64 rounded-3xl object-cover shadow-2xl border-4 border-yellow-400"
               whileHover={{ scale: 1.05 }}
@@ -39,7 +39,7 @@ export default function AboutFounder() {
               transition={{ repeat: Infinity, duration: 8 }}
             />
             <motion.img
-              src="https://scontent.fbom22-1.fna.fbcdn.net/v/t1.6435-9/153360327_724836008176528_1573588013405086816_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=rizIQUq05gEQ7kNvwHz5Svf&_nc_oc=Adnl_Fct2pEwHETPXG2CJFx7G9tYB9IZ9DKR-AlKFjduBvksdXH2q5R_EVKmeYFZ-M04cSpyGbFZTRgtr_4yzSHN&_nc_zt=23&_nc_ht=scontent.fbom22-1.fna&_nc_gid=sLCDvN5hkRN0lrfVCfVRQA&oh=00_AfiTrBU5xohLKT8S3ihXoPNC2vr40PlJUvk4CWBGKDHiAA&oe=695256C1"
+              src="./images/anchor harshal 2.jpg"
               className="absolute -top-4 md:-top-6 right-0 w-28 h-28 md:w-40 md:h-40 rounded-2xl shadow-xl border-4 border-white"
               animate={{ rotate: [0, -4, 4, 0] }}
               transition={{ repeat: Infinity, duration: 10 }}

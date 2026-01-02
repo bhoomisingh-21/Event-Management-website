@@ -203,22 +203,7 @@ const HeroSection = () => {
 
   </motion.h2>
 
-  {/* Hero Subtitle */}
-  <motion.p
-    initial={{ y: 30, opacity: 0 }}
-    animate={{ y: 0, opacity: 1 }}
-    transition={{ delay: 0.2, duration: 1 }}
-    className="relative max-w-2xl text-[17px] md:text-xl font-medium leading-relaxed mb-8 text-white"
-    style={{
-      backdropFilter: 'blur(5px)',
-      WebkitBackdropFilter: 'blur(5px)',
-      padding: '0 4px',
-      borderRadius: '4px',
-      textShadow: '0 3px 15px rgba(0,0,0,0.7)',
-    }}
-  >
-    Weddings, ring ceremonies, godh bharai, birthdays, or corporate events. Khushboo Eventz turns moments into timeless memories with unmatched artistry, warmth, and elegance.
-  </motion.p>
+
 
   {/* Hero Button */}
  <motion.a

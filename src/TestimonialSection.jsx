@@ -8,42 +8,36 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const testimonials = [
   {
     name: "Ashok Kumar",
-    date: "2023-06-10",
     rating: 5,
     text: "Excellent...everyone was surprised by seeing their performances..... definitely will invite for next function.......highly recommended!!!!!! its the highlight of our marriage!!!!",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Eo_circle_pink_white_letter-a.svg/2048px-Eo_circle_pink_white_letter-a.svg.png",
   },
   {
     name: "komal Ch",
-    date: "2023-05-10",
     rating: 5,
     text: "This is best event management in Kerala. Our wedding event was amazing with this company. We are very happy with this group.",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Eo_circle_teal_letter-k.svg/1200px-Eo_circle_teal_letter-k.svg.png",
   },
   {
     name: "PINDIYAN ANTONY",
-    date: "2023-04-14",
     rating: 5,
     text: "In my point of view best event management in Thrissur and very good wedding planner in Kerala.",
     image: "https://thepicturesdp.in/wp-content/uploads/2025/08/peachy-queen-profile-pic.jpg",
   },
   {
     name: "Rahul Dev",
-    date: "2023-07-05",
     rating: 5,
     text: "Amazing work! The decoration and management were flawless. They made our event memorable beyond expectations.",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Eo_circle_indigo_white_letter-r.svg/2048px-Eo_circle_indigo_white_letter-r.svg.png",
   },
   {
     name: "Anjali aron",
-    date: "2023-08-12",
     rating: 5,
     text: "Top-notch professionalism and creativity! They handled everything smoothly. Would definitely recommend them for any big event.",
     image: "https://i.pinimg.com/236x/c1/b1/16/c1b116c483b052a9d09e6d1f1eb79009.jpg",
   },
   {
     name: "Sneha Nair",
-    date: "2023-09-02",
     rating: 5,
     text: "Everything went perfectly! The team was very cooperative and made sure all arrangements were perfect.",
     image: "https://mastdp.in/wp-content/uploads/profile-cute-girl-pic-6.webp",
