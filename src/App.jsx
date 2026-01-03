@@ -9,6 +9,8 @@ import FunActivities from "./FunActivities";
 import QnASection from "./QnASection";
 import AboutFounder from "./AboutFounder";
 import Pricing from "./Pricing";
+import "./index.css"; // ✅ correct
+
 function App() {
  
 

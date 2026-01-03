@@ -4,6 +4,8 @@ import { Sparkles, Star, Music } from "lucide-react";
 
 const FormSection = () => {
   return (
+
+    
     <section
       id="book"
       className="relative bg-cover bg-center bg-no-repeat py-24 px-6 sm:px-12 overflow-hidden"
@@ -12,6 +14,7 @@ const FormSection = () => {
           "url('https://i.pinimg.com/736x/e2/15/a3/e215a3084956ce5be9a8195e14a51521.jpg')",
       }}
     >
+      
       {/* Animated floating icons */}
       <motion.div
         animate={{ y: [0, -15, 0] }}
@@ -57,7 +60,7 @@ const FormSection = () => {
               hassle-free celebrations that captivate your attendees.
             </p>
             <span className="text-sm uppercase tracking-widest text-pink-300 font-semibold">
-              Khushboo Event Management 
+              Khushboo Eventz Management 
             </span>
           </div>
         </motion.div>

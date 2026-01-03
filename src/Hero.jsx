@@ -16,9 +16,9 @@ const HeroSection = () => {
   ];
 
   const heroImages = [
-    "./images/scroller1.jpg",
+    "https://i.pinimg.com/736x/93/cd/85/93cd852adc381e146abdf9ce9d85c7f0.jpg",
+   "https://i.pinimg.com/1200x/85/d9/22/85d922c83af7fd97351b71dda21854d4.jpg",
     "./images/scroller2.jpg",
-    "./images/scroller3.jpg",
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
@@ -77,9 +77,8 @@ const HeroSection = () => {
 
       {/* Header */}
       <header
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-          scrolled ? "backdrop-blur-md bg-black/30 shadow-lg" : "bg-transparent"
-        }`}
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled ? "backdrop-blur-md bg-black/30 shadow-lg" : "bg-transparent"
+          }`}
       >
         <div className="flex items-center justify-between max-w-7xl mx-auto px-5 md:px-6 py-5 md:py-6 relative">
           {/* Logo */}
@@ -176,50 +175,48 @@ const HeroSection = () => {
       {/* Hero Text */}
       <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-6 md:px-12 z-20">
 
-  {/* Hero Title */}
-  <motion.h2
-    initial={{ y: 40, opacity: 0 }}
-    animate={{ y: 0, opacity: 1 }}
-    transition={{ duration: 1 }}
-    className="relative text-4xl md:text-6xl font-serif font-light leading-tight mb-6 tracking-wide"
-    style={{
-      color: 'white',
-      backdropFilter: 'blur(6px)',
-      WebkitBackdropFilter: 'blur(6px)',
-      padding: '0 6px',
-      borderRadius: '5px',
-      textShadow: '0 4px 20px rgba(0,0,0,0.8)',
-    }}
-  >
-    We Make Your <br />
-  <span
-  className="font-semibold text-white"
-  style={{
-    textShadow: '0 0 12px rgba(255,255,255,0.8), 0 4px 20px rgba(0,0,0,0.6)',
-  }}
->
-  Events Memorable
-</span>
+        {/* Hero Title */}
+        <motion.h2
+          initial={{ y: 40, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="relative text-4xl md:text-6xl font-serif font-light leading-tight mb-6 tracking-wide"
+          style={{
+            color: 'white',
+            padding: '0 6px',
+            borderRadius: '5px',
+            textShadow: '0 4px 20px rgba(0,0,0,0.8)',
+          }}
+        >
+          We Make Your <br />
+          <span
+            className="font-semibold text-white"
+            style={{
+              textShadow: '0 0 12px rgba(255,255,255,0.8), 0 4px 20px rgba(0,0,0,0.6)',
+            }}
+          >
+            Events Memorable
+          </span>
 
-  </motion.h2>
+        </motion.h2>
 
 
 
-  {/* Hero Button */}
- <motion.a
-  initial={{ y: 20, opacity: 0 }}
-  animate={{ y: 0, opacity: 1 }}
-  transition={{ delay: 0.4, duration: 0.8 }}
-  href="#book"
-  className="mt-4 px-16 py-4 text-lg font-semibold rounded-full 
+        {/* Hero Button */}
+        <motion.a
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.4, duration: 0.8 }}
+          href="#book"
+          className="mt-4 px-16 py-4 text-lg font-semibold rounded-full 
              bg-gradient-to-r from-[#FF007F] to-[#FF7FAF] text-white 
              shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
->
-  Book Now
-</motion.a>
+        >
+          Book Now
+        </motion.a>
 
 
-</div>
+      </div>
 
     </section>
   );

@@ -16,3 +16,73 @@
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;     /* Firefox */
 }
+
+/* ================= FLOATING PARTICLES ================= */
+.particle {
+  position: absolute;
+  opacity: 0.45;
+  animation: float 10s ease-in-out infinite;
+}
+
+/* STARS */
+.particle.star {
+  color: #f59e0b;
+  font-size: 18px;
+  animation-duration: 8s;
+}
+
+.particle.star.big {
+  font-size: 28px;
+  opacity: 0.35;
+  animation-duration: 12s;
+}
+
+/* DOTS */
+.particle.dot {
+  width: 6px;
+  height: 6px;
+  background: #fb7185;
+  border-radius: 9999px;
+}
+
+/* CIRCLES */
+.particle.circle {
+  width: 36px;
+  height: 36px;
+  border: 2px solid #fbbf24;
+  border-radius: 9999px;
+}
+
+.particle.circle.big {
+  width: 72px;
+  height: 72px;
+  border-width: 2px;
+  opacity: 0.3;
+  animation-duration: 14s;
+}
+
+/* SQUARES */
+.particle.square {
+  width: 38px;
+  height: 38px;
+  border: 2px solid #fca5a5;
+  border-radius: 12px;
+  transform: rotate(12deg);
+}
+
+.particle.square.big {
+  width: 80px;
+  height: 80px;
+  border-width: 2px;
+  opacity: 0.25;
+  animation-duration: 16s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(18px, -22px);
+  }
+}
