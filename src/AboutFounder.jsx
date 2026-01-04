@@ -79,28 +79,32 @@ export default function AboutFounder() {
               “Turning visions into vibrant celebrations.”
             </p>
 
-            {/* Contact Info */}
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center md:justify-start">
-              <a
-                href="tel:+919876543210"
-                className="flex items-center gap-2 text-gray-700 hover:text-yellow-600 transition font-medium"
-              >
-                <span className="bg-yellow-100 text-yellow-600 p-2 rounded-full">
-                  📞
-                </span>
-                +91 98765 43210
-              </a>
+         {/* Contact Info */}
+<div className="flex flex-col sm:flex-row gap-4 sm:gap-6 
+                items-center md:items-start 
+                text-center md:text-left
+                justify-center md:justify-start">
+  <a
+    href="tel:+919022225334"
+    className="flex items-center gap-2 text-gray-700 hover:text-yellow-600 transition font-medium"
+  >
+    <span className="bg-yellow-100 text-yellow-600 p-2 rounded-full">
+      📞
+    </span>
+    +91 9022225334
+  </a>
 
-              <a
-                href="mailto:khushbooeventz@gmail.com"
-                className="flex items-center gap-2 text-gray-700 hover:text-yellow-600 transition font-medium"
-              >
-                <span className="bg-yellow-100 text-yellow-600 p-2 rounded-full">
-                  ✉️
-                </span>
-                khushbooeventz@gmail.com
-              </a>
-            </div>
+  <a
+    href="mailto:Harshal.d.gadhia@gmail.com"
+    className="flex items-center gap-2 text-gray-700 hover:text-yellow-600 transition font-medium"
+  >
+    <span className="bg-yellow-100 text-yellow-600 p-2 rounded-full">
+      ✉️
+    </span>
+    Harshal.d.gadhia@gmail.com
+  </a>
+</div>
+
           </motion.div>
 
         </div>
