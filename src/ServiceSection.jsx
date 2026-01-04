@@ -6,7 +6,7 @@ const services = [
   {
     title: "Birthday Parties",
     description: "Make your special day unforgettable with our themed birthday celebrations.",
-    image: "./images/Birthday.jpg",
+    image: "./images/birthday.jpg",
   },
   {
     title: "Sangeet Sandhyas",
@@ -36,12 +36,12 @@ const services = [
   {
     title: "Ring Ceremony",
     description: "Celebrate your love with our elegant and personalized ring ceremonies.",
-    image: "./images/Ring_ceremony.jpg", // replace with your preferred image
+    image: "./images/Ring ceremony.jpg", // replace with your preferred image
   },
   {
     title: "God Bharayi",
     description: "Organize this auspicious ceremony with our expert arrangements and care.",
-    image: "./images/god_bharayi.jpg", 
+    image: "./images/God bharayi.jpg", 
   },
   {
     title: "Anniversary Celebrations",
